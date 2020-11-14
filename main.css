@@ -1,0 +1,464 @@
+/* hier staat de styling in voor alle webpagina's */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(228, 225, 225);
+    position: relative;
+    padding-bottom: 52px;
+    min-height: 100vh;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    font-family: 'Nunito', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background-image: linear-gradient(to right, #4c4c4c, #5c5b5c, #6e6a6a, #7e7b78, #8c8c87);
+    overflow: hidden;
+}
+
+li {
+    list-style: none;
+    text-decoration: none;
+}
+
+.links {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.links a {
+    text-decoration: none;
+    color: rgb(202, 199, 199);
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.opvul {
+    height: 20px;
+}
+
+.artikel {
+    background-color: rgba(243, 240, 240, 0.8);
+    margin-left: 15px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    max-width: 70vw;
+    ;
+}
+
+.artikel img {
+    float: left;
+    margin: 10px 10px;
+    max-width: 40%;
+    height: auto;
+}
+
+.link:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+@-webkit-keyframes pulse-shrink-on-hover {
+    to {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+}
+
+@keyframes pulse-shrink-on-hover {
+    to {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+}
+
+.pulse-shrink-on-hover {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.pulse-shrink-on-hover:hover, .pulse-shrink-on-hover:focus, .pulse-shrink-on-hover:active {
+    -webkit-animation-name: pulse-shrink-on-hover;
+    animation-name: pulse-shrink-on-hover;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+.inhoud {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    font-family: 'Nunito', sans-serif;
+}
+
+.inhoudtabel {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 15px;
+    overflow: hidden;
+    font-family: 'Nunito', sans-serif;
+}
+
+#submit {
+    align-self: center;
+    box-shadow: 0 0 10px black;
+    margin-top: 10px;
+    width: 50%;
+    position: relative;
+}
+
+.koptekst {
+    margin: 40px 0px 5px 20px;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-synthesis: weight;
+}
+
+.koptekst h2 {
+    transform: translateY(-50%);
+    letter-spacing: 8px;
+    font-size: 2em;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 0 5px 10px rgba(0, 0, 0, 1);
+    mix-blend-mode: overlay;
+}
+
+.artikel h1 {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.logo img {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    width: 80px;
+    opacity: 0.8;
+}
+
+.invoerveld {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    margin: 0px 0px 0px 20px
+}
+
+#error {
+    max-width: 266px;
+    word-break: keep-all;
+    margin-bottom: 5px;
+}
+
+.red {
+    color: rgb(128, 33, 33)
+}
+
+.green {
+    color: green;
+}
+
+.invoerveld input {
+    width: 120px;
+}
+
+#buienalarm>iframe {
+    overflow: hide;
+}
+
+#uitvoer {
+    margin: 0px 0px 0px 20px;
+    width: 320px;
+    border: 4px solid black;
+    border-radius: 5px;
+}
+
+#uitvoerkop {
+    background-color: #605f66;
+    color: rgb(228, 225, 225);
+    text-align: left;
+    border: 1px solid black;
+    min-width: 140px;
+    word-break: break-all;
+}
+
+#uitvoer td, #uitvoer th {
+    border: 1px solid black;
+    min-width: 140px;
+    max-width: 140px;
+    word-break: break-all;
+    padding-left: 5px;
+}
+
+#uitvoer tr:nth-child(even) {
+    background-color: #f5f5f5;
+    color: black;
+}
+
+#uitvoer tr {
+    background-color: #605f66;
+    color: rgb(228, 225, 225);
+}
+
+input {
+    display: inline-block;
+}
+
+.grid1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    justify-items: center;
+    grid-gap: 1em;
+    margin-top: 17px;
+}
+
+.grid2 img {
+    width: 100%;
+}
+
+#video {
+    display: flex;
+    justify-content: space-evenly;
+    max-height: 600px;
+    margin: 15px auto;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+audio {
+    border-radius: 5px;
+}
+
+footer {
+    color: rgb(202, 199, 199);
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-family: 'Nunito', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    background-color: #333;
+    font-size: 8px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    clear: both;
+}
+
+footer .email {
+    float: right;
+}
+
+.tabs {
+    margin-left: 15px;
+    margin-top: 25px;
+    width: 600px;
+    background-image: linear-gradient(to right, #4c4c4c, #5c5b5c, #6e6a6a, #7e7b78, #8c8c87);
+    border-radius: 5px 5px 5px 5px;
+}
+
+.tabs ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.tab-inhoud table {
+    width: 250px;
+}
+
+ul#tabs-nav {
+    list-style: none;
+    margin: 0;
+    padding: 5px;
+    overflow: auto;
+}
+
+ul#tabs-nav li {
+    float: left;
+    font-weight: bold;
+    margin-right: 2px;
+    padding: 8px 10px;
+    border-radius: 5px 5px 5px 5px;
+    cursor: pointer;
+}
+
+ul#tabs-nav li:hover, ul#tabs-nav li.active {
+    background-color: rgb(202, 199, 199);
+}
+
+#tabs-nav li a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.tab-inhoud {
+    padding: 10px;
+    background-color: #FFF;
+}
+
+.vorm {
+    fill: transparent;
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 8px;
+    stroke: #19f6e8;
+}
+
+.tekst {
+    color: #fff;
+    font-family: 'Roboto Condensed';
+    font-size: 22px;
+    letter-spacing: 8px;
+    line-height: 32px;
+    position: relative;
+    top: -48px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+@keyframes draw {
+    0% {
+        stroke-dasharray: 140 540;
+        stroke-dashoffset: -474;
+        stroke-width: 8px;
+    }
+    100% {
+        stroke-dasharray: 760;
+        stroke-dashoffset: 0;
+        stroke-width: 2px;
+    }
+}
+
+.svg {
+    text-align: center;
+}
+
+.svg:hover .vorm {
+    -webkit-animation: 0.5s draw linear forwards;
+    animation: 0.5s draw linear forwards;
+}
+
+/* contact pagina */
+
+.contact {
+    margin-top: 40px;
+    box-sizing: border-box;
+    border: 2px solid #000;
+    cursor: pointer;
+}
+
+.contact h2 {
+    margin: 0;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+form .row {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+form .row .contact1 {
+    width: calc(50% - 10px);
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+form .row .contact2 {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.contact label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.invoervelden, .contact textarea {
+    width: 100%;
+    border: 2px solid #000;
+    padding: 10px;
+    outline: none;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-size: 18px;
+    resize: none;
+}
+
+.contact textarea {
+    height: 150px;
+}
+
+#verzendknop {
+    border: 2px solid #000;
+    padding: 10px;
+    font-size: 18px;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: consolas;
+    outline: none;
+    cursor: pointer;
+    background: #000;
+    color: #fff;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: unset;
+}
+
+#verstuurdimage img {
+    max-width: 140px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 45%;
+}
+
+#verstuurd {
+    text-align: center;
+    margin-bottom: 10px;
+}

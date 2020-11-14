@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <title>Won eindopdracht</title>
+    <link rel='stylesheet' type='text/css' href='main.css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src='main.js' defer></script>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="img/bmwlogo.png" alt="logo">
+        </div>
+        <ul class="links">
+            <li>
+                <a class="link link-five pulse-shrink-on-hover" href="home.html">Home</a>
+            </li>
+            <li>
+                <a class="link link-five pulse-shrink-on-hover" href="pagina1.html">Modellen</a>
+            </li>
+            <li>
+                <a class="link link-five pulse-shrink-on-hover" href="pagina2.html">Fotos</a>
+            </li>
+            <li>
+                <a class="link link-five pulse-shrink-on-hover" href="pagina3.html">Video</a>
+            </li>
+            <li>
+                <a class="link link-five pulse-shrink-on-hover" href="pagina4.html">Nieuwsbrief</a>
+            </li>
+            <li>
+                <a class="link link-five pulse-shrink-on-hover" href="pagina5.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="inhoudtabel">
+        <div class="svg">
+            <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
+                <rect class="vorm" height="60" width="320" />
+            </svg>
+            <div class="tekst">Nieuwsbrief</div>
+        </div>
+        <div class="invoerveld">
+            <div id="error"></div>
+
+            <table id="invoer">
+                <tr>
+                    <td>Naam</td>
+                    <td><input id="naam" type="text" placeholder="Naam" /></td>
+                </tr>
+                <tr>
+                    <td>Email-adres</td>
+                    <td><input id="email" type="text" placeholder="Voorbeeld@Domein.nl" /></td>
+                </tr>
+                <tr>
+                    <td>Geboortedatum</td>
+                    <td><input id="geboortedatum" type="date" /></td>
+                </tr>
+            </table>
+            <button id="submit">Submit</button>
+        </div>
+        <div class="uitvoerveld">
+            <div class="opvul"></div>
+            <table id="uitvoer">
+                <tr id="uitvoerkop"> 
+                    <th>Naam</th>
+                    <th>Email</th>
+                    <th>Geboortedatum</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="footer">
+        <footer>2019 © Remi Peerlings <span class="email">remi.p@hotmail.com</span></footer>
+    </div>
+</body>
+</html>

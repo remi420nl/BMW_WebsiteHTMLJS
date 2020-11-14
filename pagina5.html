@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <title>Won eindopdracht</title>
+    <link rel='stylesheet' type='text/css' href='main.css'>
+    <script src='contact.js' defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="img/bmwlogo.png" alt="logo">
+        </div>
+        <ul class="links">
+            <li>
+                <a class="link link-five pulse-shrink-on-hover" href="home.html">Home</a>
+            </li>
+            <li>
+                <a class="link link-five pulse-shrink-on-hover" href="pagina1.html">Modellen</a>
+            </li>
+            <li>
+                <a class="link link-five pulse-shrink-on-hover" href="pagina2.html">Fotos</a>
+            </li>
+            <li>
+                <a class="link link-five pulse-shrink-on-hover" href="pagina3.html">Video</a>
+            </li>
+            <li>
+                <a class="link link-five pulse-shrink-on-hover" href="pagina4.html">Nieuwsbrief</a>
+            </li>
+            <li>
+                <a class="link link-five pulse-shrink-on-hover" href="pagina5.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="inhoudtabel">
+        <div id="verstuurdimage" class="hide">
+            <img src="img/envelop.png" alt="verstuurd">
+        </div>
+        <div class="contact">
+            <form id="contact">
+                <div class="row">
+                    <div class="contact1">
+                        <label>Voornaam</label>
+                        <input class="invoervelden" type="text"  placeholder="voornaam">
+                    </div>
+                    <div class="contact1">
+                        <label>Achternaam</label>
+                        <input class="invoervelden" type="text"  placeholder="achternaam">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="contact1">
+                        <label>Email adres</label>
+                        <input id="emailveld" class="invoervelden" type="text"
+                            placeholder="info@novi.nl">
+                    </div>
+                    <div class="contact1">
+                        <label>Telefoonnummer</label>
+                        <input class="invoervelden" type="text" placeholder="010-1234567">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="contact2">
+                        <label>Uw bericht</label>
+                        <textarea id="berichtveld" placeholder="Typ hier uw bericht"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="contact2">
+                        <button id="verzendknop">Verstuur</button>
+                    </div>
+                </div>
+            </form>
+            <div id="verstuurd"></div>
+        </div>
+    </div>
+    <div class="footer">
+        <footer>2019 © Remi Peerlings <span class="email">remi.p@hotmail.com</span></footer>
+    </div>
+</body>
+</html>
